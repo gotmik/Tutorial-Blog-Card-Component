@@ -1,7 +1,120 @@
+/* CSS reset & google font */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap");
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* write your CSS here */
+html,
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5e7da;
+}
+
+.container .card {
+  width: 323px;
+  height: 473px;
+  filter: drop-shadow(0px 7px 29px rgba(100, 100, 111, 0.2));
+  border-radius: 10px;
+  background: #fff;
+}
+
+.container p {
+  font-style: normal;
+}
+
+/* Image */
+.container img {
+  width: 323px;
+  height: 209px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* Content */
+.content {
+  padding: 25px;
+}
+
+.btn {
+  font-size: 12px;
+  background: #f97316;
+  border-radius: 9px;
+  width: 102px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn p {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #10182f;
+  margin: 9px 0px;
+}
+
+.subtext {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #10182f;
+}
+
+/* User */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 38px;
+}
+
+.user img {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.user p:nth-child(1) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #10182f;
+}
+
+.user p:nth-child(2) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #545d7a;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 480px) {
+  .container .card {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+  }
+  .header {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
